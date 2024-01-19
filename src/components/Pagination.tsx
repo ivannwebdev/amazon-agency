@@ -20,18 +20,18 @@ const Pagination: FC<Props> = ({ pages, setCurrentPage, currentPage }): ReactEle
         pages.map((page) => (
           <div
             className='page'
-            style={ { backgroundColor: page === currentPage ? 'lightgrey' : '' } }
-            key={ page }
-            onClick={ () => setCurrentPage(page) }
+            style={{ backgroundColor: page === currentPage ? 'lightgrey' : '' }}
+            key={page}
+            onClick={() => setCurrentPage(page)}
           >
-            { page }
+            {page}
           </div>
         ))
       }
 
       <Arrow
-        direction={ 'right' }
-        onClick={ () => setCurrentPage(currentPage + 1) }
+        direction={'right'}
+        onClick={() => setCurrentPage(currentPage + 1)}
       />
     </div>
   )
