@@ -1,0 +1,24 @@
+.arrow {
+  margin-top: 15px;
+  border: 1px solid black;
+  border-width: 0 3px 3px 0;
+  padding: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.arrow-container {
+  margin: 0 5px 0 5px;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.arrow-container:hover {
+  border-bottom: 2px solid darkgray;
+}

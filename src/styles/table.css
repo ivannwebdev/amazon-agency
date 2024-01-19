@@ -1,0 +1,38 @@
+caption {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+}
+
+th {
+  text-align: center;
+  padding: 0.8rem;
+  background-color: #c6c2c2;
+  font-weight: 500;
+}
+
+tr:nth-of-type(2n) {
+  background-color: #ecedef;
+}
+
+tr:not(.head-row):hover {
+  outline: 1px solid rgb(118, 120, 242);
+}
+
+tr:not(.head-row) {
+  cursor: pointer;
+}
+
+td {
+  text-align: center;
+  padding: 0.8rem;
+  color: rgb(98, 95, 95);
+}
+
+table {
+  margin-top: 2rem;
+  min-width: 50vw;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
