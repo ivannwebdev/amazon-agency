@@ -1,11 +1,13 @@
 import { FC, ReactElement, ReactNode } from 'react'
 import '../styles/table.css'
 
-type PropsWithChildren<P = unknown> = P & { children: ReactNode } & {
+type PropsWithChildren<P = unknown> = P & { children: ReactNode }
+
+type Props = {
   content: 'accounts' | 'profiles' | 'campaigns'
 }
 
-const Table: FC<PropsWithChildren> = ({ children, content }): ReactElement => {
+const Table: FC<PropsWithChildren<Props>> = ({ children, content }): ReactElement => {
   return (
     <table className='table-striped'>
       <caption>{content}</caption>
